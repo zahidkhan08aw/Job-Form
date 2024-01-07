@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contentbox">
+        <h1 class="title">
+          Job Application <span class="minititle">(web)</span>
+        </h1>
+        <form id="form" action="">
+          <div class="formcontent">
+            <div class="forminput">
+              <label for="FirstName">First Name</label>
+              <input
+                id="FirstName"
+                type="text"
+                name="First Name"
+                placeholder="Enter your first Name..."
+                required
+              />
+            </div>
+            <div class="forminput">
+              <label for="LastName"> Last Name</label>
+              <input
+                id="LastName"
+                type="text"
+                name="Last Name"
+                placeholder="Enter your Last Name..."
+                required
+              />
+            </div>
+            <div class="forminput">
+              <label for="Email">Email</label>
+              <input
+                id="Email"
+                type="email"
+                name="Email"
+                placeholder="Enter your email..."
+                required
+              />
+            </div>
+            <div class="forminput">
+              <label for="jobrole">Job Role</label>
+              <select class="select" name="JobRole" id="jobrole" required>
+                <option value="">Select you job role</option>
+                <option value="Frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="Fullstack">Full stack Developer</option>
+                <option value="Grphic">Graphic Designer</option>
+                <option value=" ]webtl">Web development TL</option>
+              </select>
+            </div>
+            <div class="textareainput">
+              <label for="Address">Address</label>
+              <textarea
+                name="address"
+                placeholder="Enter Your Address"
+                id="Address"
+                cols="50"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="forminput">
+              <label for="City">City</label>
+              <input
+                id="City"
+                type="text"
+                name="City"
+                placeholder="Enter your City..."
+                required
+              />
+            </div>
+            <div class="forminput">
+              <label for="Pincode">Pincode</label>
+              <input
+                id="Pincode"
+                type="number"
+                name="Pincode"
+                placeholder="Enter your Pincode..."
+                required
+              />
+            </div>
+            <div class="forminput">
+              <label for="Date">Date</label>
+              <input id="Date" type="date" name="Date" required />
+            </div>
+            <div class="forminput">
+              <label for="Upload CV">Upload CV</label>
+              <input id="Upload" type="file" name="Upload CV" required />
+            </div>
+          </div>
+          <div class="buttonn">
+            <button id="open-popup" class="s" onclick="openPopup()">
+              Apply Now
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="pop-up">
+      <img src="tick.png" alt="" />
+      <h2>Thank You!</h2>
+      <p>Your Details has been Successfully Submitted. Thanks!</p>
+      <button id="closepopup" type="button" onclick="closePopup()">Ok</button>
+    </div>
+
+    <script src="application.js"></script>
+  </body>
+</html>
